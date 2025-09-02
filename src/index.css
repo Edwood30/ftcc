@@ -1,0 +1,89 @@
+:root {
+  --darkBlue: #0A1E3F;
+  --mediumBlue: #1C4E80;
+  --lightBlue: #3C91E6;
+  --cyan: #6ECFF6;
+  --black: #1A1A1A;
+  --white: #FFFFFF;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+}
+
+a { color: var(--lightBlue); text-decoration: none; }
+a:hover { color: var(--cyan); }
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--darkBlue);
+  color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
+.brand-badge { width: 32px; height: 32px; border-radius: 999px; background: var(--cyan); }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: var(--white); opacity: 0.9; }
+.nav-links a:hover { color: var(--cyan); opacity: 1; }
+
+.hero {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 72px 0;
+  text-align: center;
+}
+.hero h1 { font-size: 40px; margin: 0; }
+.hero p { margin: 12px 0 24px; color: var(--cyan); }
+.btn-primary {
+  background: var(--mediumBlue);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover { background: var(--lightBlue); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.card {
+  border: 1px solid rgba(60,145,230,0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.card img { width: 100%; height: 150px; object-fit: cover; }
+.card h3 { margin: 12px 12px 4px; color: var(--darkBlue); }
+.card p { margin: 0 12px 16px; color: #333; font-size: 14px; }
+
+.section { padding: 40px 0; }
+
+.footer { background: var(--black); color: var(--white); padding: 20px 0; text-align: center; margin-top: 40px; }

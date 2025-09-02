@@ -2,7 +2,7 @@ import './index.css'
 
 function App() {
   return (
-    <div>
+      <div>
       <header className="navbar">
         <div className="container navbar-inner">
           <div className="brand">
@@ -18,7 +18,7 @@ function App() {
 
       <section className="hero">
         <div className="container">
-          <h1>POGI SI EDWOOD</h1>
+          <h1>Building the Future, Together</h1>
           <p>Innovating across agriculture, aviation, finance, health, marine, transport, and IT.</p>
           <a className="btn-primary" href="#divisions">Explore Divisions</a>
         </div>
@@ -70,9 +70,9 @@ function App() {
       <footer id="contact" className="footer">
         <div className="container">
           © {new Date().getFullYear()} FTCC Solutions Inc. · info@ftcc.com · +1 (000) 000-0000
-        </div>
+      </div>
       </footer>
-    </div>
+      </div>
   )
 }
 
